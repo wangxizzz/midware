@@ -1,8 +1,11 @@
-# kdiff3 ignore
-*.orig
-
 # maven ignore
 target/
+*.jar
+!.mvn/wrapper/*
+*.war
+*.zip
+*.tar
+*.tar.gz
 
 # eclipse ignore
 .settings/
@@ -25,10 +28,10 @@ target/
 # system ignore
 .DS_Store
 Thumbs.db
+*.orig
 
-# package ignore (optional)
-# *.jar
-# *.war
-# *.zip
-# *.tar
-# *.tar.gz
+# flatten ignore
+.flattened-pom.xml
+
+# license check result
+license-list
