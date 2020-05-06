@@ -35,6 +35,11 @@ public class ReplayWithProblem {
         while (true) {
             // 循环队列的写法。利用取模
             final HttpUriRequest request = cache.get(i % cache.size());
+            /**
+             * 最终分析出内存泄漏的原因：FutureCallback这个是ReplayWithProblem$1代表内部类，
+             * FutureCallback没有在http调用完毕之后及时回收，因为它被HttpUriRequest强引用、
+             * List<HttpUriRequest> cache 又强引用HttpAsyncClient，因此造成内存泄漏
+             */
             httpClient.execute(request, new FutureCallback<HttpResponse>() {
                 public void completed(final HttpResponse response) {
                     System.out.println(request.getRequestLine() + "->" + response.getStatusLine());
