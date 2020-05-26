@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @Author wangxi
  * @Time 2020/5/4 21:20
  */
-@Component
+//@Component
 public class RedisKeyExpirationListener extends KeyExpirationEventMessageListener {
     public RedisKeyExpirationListener(RedisMessageListenerContainer listenerContainer) {
         super(listenerContainer);
