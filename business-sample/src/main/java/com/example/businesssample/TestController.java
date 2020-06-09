@@ -18,7 +18,7 @@ public class TestController {
     public void test() {
         System.out.println("进入方法====================");
         long start = System.currentTimeMillis();
-        int count = 80000000;
+        int count = 55000000;
         Set<Long> set1 = new HashSet<>(count);
         Set<Long> set2 = new HashSet<>(count);
 
