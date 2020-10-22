@@ -1,4 +1,4 @@
-package com.example.framework;
+package com.example.framework.component;
 
 /**
  * @author wangxi created on 2020/10/21 23:08
