@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: framework
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    id: framework
+    name: framework
+    qos-enable: false
