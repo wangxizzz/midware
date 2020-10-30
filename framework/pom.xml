@@ -20,6 +20,12 @@
     </properties>
 
     <dependencies>
+        <!--引入自定义starter-->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>boot-starter-msg</artifactId>
+            <version>0.0.2-SNAPSHOT</version>
+        </dependency>
 
         <!--sentinel相关-->
         <!-- 适配dubbo -->
@@ -78,12 +84,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 

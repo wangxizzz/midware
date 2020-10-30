@@ -10,3 +10,7 @@ dubbo:
     id: framework
     name: framework
     qos-enable: false
+msg:
+  enable: true
+  username: wangxi
+  password: 123
