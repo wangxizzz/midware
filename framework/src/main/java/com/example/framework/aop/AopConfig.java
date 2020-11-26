@@ -10,6 +10,10 @@ import javax.annotation.Resource;
 /**
  * @author wangxi03 created on 2020/11/25  11:03 上午
  * @version v1.0
+ *
+ * https://juejin.cn/post/6844903698221514765
+ *
+ * https://blog.csdn.net/f641385712/article/details/88925478
  */
 @Configuration
 public class AopConfig {
