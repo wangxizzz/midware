@@ -20,7 +20,7 @@ public class HelloWorldDemo {
         initFlowRules();
 
         while (true) {
-            Thread.sleep(2000);
+            Thread.sleep(30);
             // 1.5.0 版本开始可以直接利用 try-with-resources 特性，自动 exit entry
             try (Entry entry = SphU.entry("HelloWorld")) {
                 // 被保护的逻辑
@@ -39,7 +39,7 @@ public class HelloWorldDemo {
         rule.setResource("HelloWorld");
         rule.setGrade(RuleConstant.FLOW_GRADE_QPS);
         // Set limit QPS to 20.
-        rule.setCount(2000);
+        rule.setCount(20);
         rules.add(rule);
         FlowRuleManager.loadRules(rules);
     }
