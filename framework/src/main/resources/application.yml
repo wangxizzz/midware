@@ -5,11 +5,18 @@ spring:
     name: framework
   main:
     allow-bean-definition-overriding: true
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+
 dubbo:
   application:
     id: framework
     name: framework
     qos-enable: false
+
 msg:
   enable: true
   username: wangxi

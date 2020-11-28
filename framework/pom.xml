@@ -27,39 +27,46 @@
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>2.2.3.RELEASE</version>
+        </dependency>
+
         <!--sentinel相关-->
         <!-- 适配dubbo -->
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-dubbo-adapter</artifactId>
-            <version>${sentinel.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.csp</groupId>-->
+            <!--<artifactId>sentinel-dubbo-adapter</artifactId>-->
+            <!--<version>${sentinel.version}</version>-->
+        <!--</dependency>-->
 
-        <!-- 开启注解 -->
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-annotation-aspectj</artifactId>
-            <version>${sentinel.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; 开启注解 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.csp</groupId>-->
+            <!--<artifactId>sentinel-annotation-aspectj</artifactId>-->
+            <!--<version>${sentinel.version}</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-core</artifactId>
-            <version>${sentinel.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.csp</groupId>-->
+            <!--<artifactId>sentinel-core</artifactId>-->
+            <!--<version>${sentinel.version}</version>-->
+        <!--</dependency>-->
 
-        <!-- 客户端需要引入 Transport 模块来与 Sentinel 控制台进行通信 -->
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-transport-simple-http</artifactId>
-            <version>${sentinel.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; 客户端需要引入 Transport 模块来与 Sentinel 控制台进行通信 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.csp</groupId>-->
+            <!--<artifactId>sentinel-transport-simple-http</artifactId>-->
+            <!--<version>${sentinel.version}</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.alibaba.csp</groupId>
-            <artifactId>sentinel-parameter-flow-control</artifactId>
-            <version>${sentinel.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.csp</groupId>-->
+            <!--<artifactId>sentinel-parameter-flow-control</artifactId>-->
+            <!--<version>${sentinel.version}</version>-->
+        <!--</dependency>-->
 
 
 
